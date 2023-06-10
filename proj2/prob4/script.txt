@@ -1,0 +1,33 @@
+First, for problem 1, ParkingGarageOperation using ArrayBlockingQueue is compiled and executed. 
+Instead of using wait and notify functions, it uses ArrayBlockingQueue for the ParkingGarage class, managing the parking capacity.
+The output is similar with the original parking garage operation implementation.
+
+Second, for problem 2, ParkingGarageOperation using Semaphore is compiled and executed.
+In this version, semaphore is used to manage the parking capacity.
+Also, the output is similar with the original implementation.
+
+Next, I will compile and execute ex one to four for problem 3. 
+
+First, using BlockingQueue and ArrayBlockingQueue, I've implemented a prime number counter, counting prime numbers between 1 to 30.
+The ArrayBlockingQueue is used to dynamically assign numbers to thread for checking whether the number is prime. 
+There is one thread for producing numbers and adding number to the queue, 
+and there are four threads checking whether the number is prime or not.
+
+Second, I've implemented a simple program to show ReadWriteLock.
+There is one shared integer for all threads.
+There are two types of threads, Reader thread and Writer thread.
+Four reader threads acquires ReadLock and prints the shared integer.
+Two writer threads acquire WriteLock and increment or multiply 2 to the shared integer.
+As you can see, multiple reader threads can acquire read lock, but only one writer thread acquire write lock at once.
+
+Third, I've implemented a simple program to show AtomicInteger.
+Four threads, one for get method, one for set, one for get and add, one for add and get method will be running, 
+with one shared Atomic Integer.
+Each thread will be sleeping for zero to nine random seconds, and operate their atomic integer method.
+Adding or setting will be done also with zero to nine random numbers.
+These procedures will be repeated 10 times for each thread.
+
+Lastly, using Cyclic Barrier, I've implemented simple sleep and wait program.
+There are four threads, sleeping for zero to four random seconds, 
+and then wait for other threads to all end their sleep using cyclic barrier.
+These procedures will be repeated five times.

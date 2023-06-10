@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "java.project.sourcePaths": [
+        "proj1/problem1",
+        "example/lec_4-1",
+        "example/lab1",
+        "example/concurrency_sample",
+        "proj1/problem2"
+    ],
+}
