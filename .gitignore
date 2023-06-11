@@ -2,3 +2,5 @@
 *.zip
 *.class
 *.out
+.vscode/
+.vscode/*
