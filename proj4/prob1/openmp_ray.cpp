@@ -1,6 +1,3 @@
-// gcc openmp_ray.cpp -fopenmp -lm (for math.h)
-// ffmpeg -i result.ppm result.png
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

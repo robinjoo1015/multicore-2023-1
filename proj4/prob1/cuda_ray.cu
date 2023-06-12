@@ -1,6 +1,3 @@
-// nvcc cuda_ray.cu -O2 (optimization)
-// ffmpeg -i result.ppm result.png
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
