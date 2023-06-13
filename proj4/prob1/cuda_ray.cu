@@ -107,13 +107,13 @@ int main(int argc, char* argv[])
     cudaMemcpy(device_temp_s, temp_s, sizeof(Sphere) * SPHERES, cudaMemcpyHostToDevice);
 
     // Set grids and threads
-    dim3 grids(DIM / 32, DIM / 32, 1);
+    dim3 blocks(DIM / 32, DIM / 32, 1);
     dim3 threads(32, 32, 1);
 
     start_time = clock();
 
     // Execute kernel function
-    kernel<<<grids, threads>>>(device_temp_s, device_bitmap);
+    kernel<<<blocks, threads>>>(device_temp_s, device_bitmap);
     // Wait for device
     cudaDeviceSynchronize();
 
